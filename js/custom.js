@@ -1,7 +1,18 @@
 // venobox
 $(document).ready(function(){
-    $('.venobox').venobox(); 
+    $('.venobox').venobox();
 });
+
+$('.banner_slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 1000,
+  arrows: false,
+  dots: true
+});
+
 
 // slick slider
 // $(document).ready(function(){
