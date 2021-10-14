@@ -45,3 +45,114 @@
 .header__image img{
     height: 80%;
 }
+.breadcrumber{
+    padding: 60px 0 30px;
+    background-color: #F8F8F8;
+}
+.breadcrumber a{
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 25px;
+    position: relative;
+}
+
+.breadcrumber a::after{
+    content: url("../images/angle_right.png");
+    position: absolute;
+    right: 7px;
+}
+.breadcrumber a:last-child::after{
+    content: '';
+}
+.course_details{
+    background-color: #F8F8F8;
+    padding-bottom: 30px;
+}
+.course_details__content{
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 7.5px;
+}
+.course_details .testimonial__video{
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.course_details .testimonial__video .overlay{
+    background-color: transparent;
+}
+.testimonial__video .overlay a::after{
+    background-color: #007C88;
+}
+
+.course_details__features{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 0 7.5px;
+}
+
+.course_details__features h2{
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.course_details__features ul{
+    padding-left: 0;
+}
+.course_details__features ul li{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #4B4B4B;
+    position: relative;
+    padding-left: 30px;
+}
+.course_details__features ul li::before{
+    content: url("../images/clock.png");
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.course_details__features ul li.lecture::before{
+    content: url("../images/video_play_icon.png");
+}
+.course_details__features ul li.schedule::before{
+    content: url("../images/calender_icon.png");
+}
+.course_details__features ul li.exam::before{
+    content: url("../images/exam.png");
+}
+.course_details__features ul li.certificate::before{
+    content: url("../images/certificate.png");
+}
+.course_details__features ul li b{
+    color: #000;
+}
+
+/* register section */
+.register{
+    background-color: #F8F8F8;
+    padding-bottom: 50px;
+}
+.register .register__content{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px 20px 30px;
+}
+.register .register__content .register__content__paragraph{
+    padding: 20px 50px 0;
+    color: #548085;
+    font-size: 16px;
+    font-weight: 600;
+}
+.suggested_course{
+    padding: 50px 0 0;
+}
+.suggested_course > .container > h2{
+    font-size: 36px;
+    font-weight: 800;
+    color: #000809;
+    padding-bottom: 30px;
+}

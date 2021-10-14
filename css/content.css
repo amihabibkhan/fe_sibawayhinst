@@ -1,0 +1,33 @@
+.content{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #474747;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6
+{
+    font-weight: 700;
+}
+
+.content h2{
+    font-size: 24px;
+    color: #000;
+}
+
+.content p,
+.content ul{
+    margin-bottom: 30px;
+}
+.content ul{
+    list-style-type: disc;
+    padding-left: 50px;
+}
+.content blockquote{
+
+}
