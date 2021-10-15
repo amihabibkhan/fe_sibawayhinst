@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibwayh::Admission Form</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> 
+    <!-- google fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.1.0/css/bootstrap.min.css">
+    <!-- venobox css -->
+    <link rel="stylesheet" href="venobox/venobox.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="animate-css/animate.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- inner page css (course) -->
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+
+    <!-- registration form start -->
+    <div class="registration_form bg_s_white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="form_box">
+                        <div class="row">
+                            <div class="col-lg-6 text-center">
+                                <div class="info">
+                                    <img src="images/logo.png" class="logo_img" alt="">
+                                    <img src="images/about.png" alt="">
+                                    <a href="#" class="btn_primary btn_create d-lg-inline-block d-none">Sign In</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <form action="" class="sign_in_form">
+                                    <h2 class="text-center text-lg-start pt-4 pt-lg-0">Create Account</h2>
+                                    <div class="f-group">
+                                        <label for="">Email / Phone</label>
+                                        <input type="text" class="form-control form-control-lg" placeholder="user@gmail.com">
+                                    </div>
+                                    <div class="f-group">
+                                        <label for="">Password</label>
+                                        <input type="password" class="form-control form-control-lg" placeholder="user@gmail.com">
+                                    </div>
+                                    <div class="f-group">
+                                        <label for="">Confirm Password</label>
+                                        <input type="password" class="form-control form-control-lg" placeholder="user@gmail.com">
+                                    </div>
+                                    <div class="text-center text-lg-start">
+                                        <button class="btn_primary">Sign Up</button>
+                                        <br>
+                                        <a href="#" class="btn_primary mt-5 btn_create d-lg-none">Sign In</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- registration form end -->
+
+ 
+    <!-- jquery -->
+    <script src="js/jquery-latest.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.1.0/js/bootstrap.bundle.min.js"></script>
+    <!-- venobox js -->
+    <script src="venobox/venobox.min.js"></script>
+    <!-- slick js -->
+    <script src="slick/slick.min.js"></script>
+    <!-- wow js -->
+    <script src="animate-css/wow.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    
+    <script>
+        new WOW().init();
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        function goToAccount(){
+            // add class
+            document.getElementById('personal_details').classList.add('d-none')
+            document.getElementById('create_account').classList.remove('d-none')
+            document.getElementById('payment').classList.add('d-none')
+
+            // remove class
+            document.getElementById('create_account_progress').classList.add('active')
+            document.getElementById('payment_progress').classList.remove('active')
+        }
+
+        function backToPersonal(){
+            // add class
+            document.getElementById('personal_details').classList.remove('d-none')
+            document.getElementById('create_account').classList.add('d-none')
+            document.getElementById('payment').classList.add('d-none')
+
+            // remove class
+            document.getElementById('create_account_progress').classList.remove('active')
+            document.getElementById('payment_progress').classList.remove('active')
+        }
+
+        function goToPayment(){
+            // add class
+            document.getElementById('personal_details').classList.add('d-none')
+            document.getElementById('create_account').classList.add('d-none')
+            document.getElementById('payment').classList.remove('d-none')
+
+            // remove class
+            document.getElementById('payment_progress').classList.add('active')
+        }
+
+        function backToAccount(){
+            // add class
+            document.getElementById('personal_details').classList.add('d-none')
+            document.getElementById('create_account').classList.remove('d-none')
+            document.getElementById('payment').classList.add('d-none')
+
+            // remove class
+            document.getElementById('payment_progress').classList.remove('active')
+        }
+    </script>
+
+</body>
+</html>

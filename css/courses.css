@@ -156,3 +156,19 @@
     color: #000809;
     padding-bottom: 30px;
 }
+
+.course_details__fee span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000809;
+}
+.course_details__fee span.emi{
+    color: #FFC22F;
+    font-size: 16px;
+}
+
+.course_details__fee h3{
+    color: #007C88;
+    font-weight: 900;
+    font-size: 30px;
+}
