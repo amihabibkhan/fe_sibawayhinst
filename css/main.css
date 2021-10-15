@@ -199,7 +199,7 @@ body {
 }
 
 .navbar {
-  padding-top: 3rem;
+  padding: 2rem 0;
 }
 .navbar .navbar-brand .logo {
   width: 80%;
@@ -268,7 +268,7 @@ body {
   min-width: 19rem;
   min-height: 6.5rem;
   line-height: 6.5rem;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   text-decoration: none;
   display: inline-block;
   text-align: center;

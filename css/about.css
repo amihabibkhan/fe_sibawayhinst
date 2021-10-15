@@ -1,0 +1,102 @@
+.breadcrumb{
+    padding-top: 60px;
+}
+.breadcrumb span {
+    font-weight: bold;
+    color: #8A8A8A;
+    font-size: 16px;
+    margin : 0 
+} 
+.breadcrumb span.current_page { 
+    color: #000809;  
+} 
+
+
+/************ about_Sibawayh *************/
+.about_section{
+    padding: 30px 0;
+}
+.about_section h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000809;
+    line-height: 50px;
+}
+.about_section p{ 
+    font-size: 16px;
+    font-weight: 600;
+    color: #474747;
+    line-height: 38px;
+}
+.about_section span{ 
+    font-weight: 700;
+    color: #000809;
+}
+
+
+/************** team section start ***********/
+.team_section{
+    text-align: center;
+    padding: 50px 0;
+}
+.team_section h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #001F22;
+    margin-bottom: 50px;
+}
+.team_section .team_members{
+    
+}
+.team_section .single_team_members{
+    background: #F2F2F2;
+    border-radius: 12px;
+    padding: 10px; 
+    transition: all .5s;
+    margin: 0 7.5px 30px;
+}
+.team_section .single_team_members:hover{ 
+	box-shadow: 0 5px 5px -2px rgba(0,0,0,.3);
+	transform: translateY(-5px);
+}
+.team_section .single_team_members:hover .member_profile img{
+    transform: scale(1.1);
+}
+
+.team_section .single_team_members .member_profile{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin: 10px auto;
+    overflow: hidden;
+    
+}
+.team_section .single_team_members .member_profile img{
+    width: 100%;
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.team_section .single_team_members .member_name{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #000809;
+
+}
+.team_section .single_team_members .member_designation{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 19px;
+    color: #4B4B4B;
+}
+.team_section .single_team_members .member_description{
+    font-size: 12px;
+    font-weight: 400; 
+    line-height: 19px;
+    color: #4B4B4B;
+}
+
+
+/************** team section end ***********/
