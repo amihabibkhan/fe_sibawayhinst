@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibwayh</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> 
+    <!-- google fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.1.0/css/bootstrap.min.css">
+    <!-- venobox css -->
+    <link rel="stylesheet" href="venobox/venobox.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="animate-css/animate.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- inner page css (profile) -->
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+    <!-- header section start -->
+        <header class="header">
+            <!-- navbar start -->
+            <nav class="custom-nav navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                      <img class="logo" src="images/logo.png" alt="logo">
+                      <img class="mobile_logo d-none" src="images/mobile-logo.png" alt="logo">
+                  </a>
+
+                <!-- custom mobile button -->   
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                      
+                    <div class="burger_icon">
+                        <div class="burger_icon__top">
+                            <div class="burger-icon-top-1"></div>
+                            <div class="burger-icon-top-2"></div>
+                        </div>
+                        <div class="burger_icon__middel">
+                            <div class="burger-icon-middel-1"></div>
+                            <div class="burger-icon-middel-2"></div>
+                        </div>
+                        <div class="burger_icon__bottom">
+                            <div class="burger-icon-top-1"></div>
+                            <div class="burger-icon-top-2"></div>
+                        </div>
+                    </div> 
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="main_menu navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li><a class="active" href="#">Home</a></li>
+                      <li><a href="#">Course</a></li>
+                      <li><a href="#">About us</a></li>
+                    </ul>
+                    <div class="nav_number">
+                        <a class="number" href="tel:01628374708"> 
+                            <div class="avator">
+                                <img src="images/profile.png" alt="call">
+                            </div>
+                            <span>Omar Faruk</span> 
+                        </a>
+                    </div> 
+                  </div>
+                </div>
+            </nav>
+            <!-- navbar end --> 
+
+        </header>
+    <!-- header section end --> 
+    
+    <!-- Course list start -->
+    <section class="my_course">
+        <div class="container">
+            <h2 class="title">Your Courses</h2>
+            <div class="course_list table-responsive">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th>SL</th>
+                            <th class="course_name">Course name</th>
+                            <th>Year</th>
+                            <th class="display">Payment Status</th>
+                            <th class="display">Result</th>
+                            <th class="display">Course Status</th>
+                            <th class="display">Complain an issue</th> 
+                            <th class="more_btn">More</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div>1</div></td>
+                            <td class="course_name"><div>Arabic Language for General Background</div></td>
+                            <td><div>2021</div></td>
+                            <td class="display"><div><a href="#" class="course_btn">Click here</a></div></td>
+                            <td class="display"><div><a href="#" class="course_btn">Click here</a></div></td>
+                            <td class="display completed"><div>Completed</div></td>
+                            <td class="display"><div><a href="#" class="complain_btn">Click here</a></div></td>
+
+                            <td class="more_btn">
+                                <a href="#" class="threedot" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </a> 
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li class="action_title">Payment Status</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                    <li class="action_title">Result</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                    <li class="action_title">Course Status</li>
+                                    <li><a class="completed" href="#">Completed</a></li>
+                                    <li class="action_title">Complain an issue</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                </ul>
+                            </td> 
+
+                        </tr>
+
+                        <tr>
+                            <td><div>1</div></td>
+                            <td class="course_name"><div>Arabic Language for General Background</div></td>
+                            <td><div>2021</div></td>
+                            <td class="display"><div><a href="#" class="course_btn">Click here</a></div></td>
+                            <td class="display"><div><a href="#" class="course_btn">Click here</a></div></td>
+                            <td class="running display"><div>Running</div></td>
+                            <td class="display"><div><a href="#" class="complain_btn">Click here</a></div></td>
+                            <td class="more_btn">
+                                <a href="#" class="threedot" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </a> 
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li class="action_title">Payment Status</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                    <li class="action_title">Result</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                    <li class="action_title">Course Status</li>
+                                    <li><a class="running" href="#">Completed</a></li>
+                                    <li class="action_title">Complain an issue</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                </ul>
+                            </td> 
+
+                        </tr>
+                        <tr>
+                            <td><div>1</div></td>
+                            <td class="course_name"><div>Arabic Language for General Background</div></td>
+                            <td><div>2021</div></td>
+                            <td class="display"><div><a href="#" class="course_btn">Click here</a></div></td>
+                            <td class="display"><div><a href="#" class="course_btn">Click here</a></div></td>
+                            <td class="display"><div>Will start in 9th june</div></td>
+                            <td class="display"><div><a href="#" class="complain_btn">Click here</a></div></td>
+                            <td class="more_btn">
+                                <a href="#" class="threedot" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </a> 
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li class="action_title">Payment Status</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                    <li class="action_title">Result</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                    <li class="action_title">Course Status</li>
+                                    <li><a class="completed" href="#">Completed</a></li>
+                                    <li class="action_title">Complain an issue</li>
+                                    <li><a class="course_btn" href="#">Click here</a></li>
+                                </ul>
+                            </td> 
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Course list end -->
+
+    <!-- course section start -->
+    <section class="course-section">
+        <div class="container">
+            <h2 class="title">Suggested Course</h2>
+            <div class="course_dtails">
+                <div class="row justify-content-center">
+                    <!-- single item -->
+                    <div class="col-md-4">
+                        <div class="course_details__single">
+                            <div style="overflow: hidden"><a href="#"><img class="course_details__single__img" src="images/courses/1.png" alt=""></a></div>
+                            <h2><a href="#">Basic Arabic Language Course (General Background)</a></h2>
+                            <p>Perfect for educated brothers and sisters from general background Combination of Classical Arabic and....</p>
+                            <div class="row course_details__single__info">
+                                <div class="col-6">
+                                    <span class="course_details__single__duration"> 6 month</span>
+                                    <h3 class="course_details__single__info__price">6000 <span>TK</span></h3>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="course_details__single__class">70 Classes</span>
+                                    <a href="" class="course_details__single__info__button">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="col-md-4">
+                        <div class="course_details__single">
+                            <div style="overflow: hidden"><a href="#"><img class="course_details__single__img" src="images/courses/1.png" alt=""></a></div>
+                            <h2><a href="#">Basic Arabic Language Course (General Background)</a></h2>
+                            <p>Perfect for educated brothers and sisters from general background Combination of Classical Arabic and....</p>
+                            <div class="row course_details__single__info">
+                                <div class="col-6">
+                                    <span class="course_details__single__duration"> 6 month</span>
+                                    <h3 class="course_details__single__info__price">6000 <span>TK</span></h3>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="course_details__single__class">70 Classes</span>
+                                    <a href="" class="course_details__single__info__button">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="col-md-4">
+                        <div class="course_details__single">
+                            <div style="overflow: hidden"><a href="#"><img class="course_details__single__img" src="images/courses/1.png" alt=""></a></div>
+                            <h2><a href="#">Basic Arabic Language Course (General Background)</a></h2>
+                            <p>Perfect for educated brothers and sisters from general background Combination of Classical Arabic and....</p>
+                            <div class="row course_details__single__info">
+                                <div class="col-6">
+                                    <span class="course_details__single__duration"> 6 month</span>
+                                    <h3 class="course_details__single__info__price">6000 <span>TK</span></h3>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="course_details__single__class">70 Classes</span>
+                                    <a href="" class="course_details__single__info__button">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="text-center">
+            <a href="#" class="btn_primary mt-5">Refer your familer person</a>
+           </div>
+        </div>
+    </section>
+    <!-- course section end -->
+
+
+    <!-- footer section start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="sibawayh">
+                    <img class="d-none" src="images/mobile-logo.png" alt="mobile-logo">
+                </a>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </div>
+            <a href="#" class="btn_primary">Start Admission</a>
+            <div class="social_media">
+                <ul>
+                    <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="images/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2021 &copy; sibawayhinst | Developed By LEGEND IT</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+ 
+    <!-- jquery -->
+    <script src="js/jquery-latest.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.1.0/js/bootstrap.bundle.min.js"></script>
+    <!-- venobox js -->
+    <script src="venobox/venobox.min.js"></script>
+    <!-- slick js -->
+    <script src="slick/slick.min.js"></script>
+    <!-- wow js -->
+    <script src="animate-css/wow.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+</html>

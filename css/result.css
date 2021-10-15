@@ -1,0 +1,62 @@
+.transcript{
+    width: 900px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.transcript .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.transcript .title .transcript_title{
+    font-style: 36px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 50px;
+}
+.transcript .title .course_title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 32px;
+}
+
+.transcript .result_summary{
+
+}
+.transcript .result_summary table tr td {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #4B4B4B;
+	padding: 15px 51px 5px 0px;
+}
+ 
+ 
+.transcript .grade_sheet h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #000;
+    text-align: center;
+    margin: 30px 0 20px;
+}
+.transcript .grade_sheet table tr th{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #4B4B4B; 
+    padding: 10px;
+    white-space: nowrap;
+}
+.transcript .grade_sheet table tr td{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000809;
+    padding: 16px;
+    white-space: nowrap;
+}
+.transcript .download{
+    text-align: center;
+}
