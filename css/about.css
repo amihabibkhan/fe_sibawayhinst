@@ -86,7 +86,7 @@
 }
 .team_section .single_team_members .member_designation{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
     line-height: 19px;
     color: #4B4B4B;
@@ -100,3 +100,36 @@
 
 
 /************** team section end ***********/
+
+
+
+
+/* ******responsive****** */
+@media all and (max-width: 992px){
+    .team_section .single_team_members { 
+        margin: 0 0 15px;
+    }
+}
+@media all and (max-width: 576px){
+    .breadcrumb {
+        padding-top: 25px;
+    }
+    .about_section {
+        padding: 10px 0;
+    }
+    .team_section { 
+        padding: 0px 0;
+    }
+    .team_section h2 {
+        font-size: 30px; 
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 576px){
+    .about_section p { 
+        line-height: 24px;
+    }
+}
+@media all and (max-width: 400px){
+    
+}

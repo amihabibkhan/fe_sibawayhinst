@@ -21,8 +21,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
-    color: #4B4B4B;
-    margin-bottom: 15px;
+    color: #4B4B4B; 
     text-align: center;
 }
 .my_course .course_list table tbody tr .course_name{
@@ -98,9 +97,9 @@
     color: #4B4B4B;
 }
 /* suggested course */
-.course-section .title{
+.suggested_course .title{
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 75px;
     color: #000809;
 }
@@ -131,5 +130,30 @@
     }
     .more_btn{
         display: block;
+    }
+    .my_course {
+        padding-top: 40px;
+    }
+}
+@media all and (max-width: 576px){
+    .my_course h2.title {
+        font-size: 25px; 
+        text-align: center;
+    }
+    .suggested_course .title {
+        font-size: 25px; 
+        text-align: center;
+    }
+}
+@media all and (max-width: 446px){
+    .my_course .course_list table thead tr th { 
+        font-size: 16px; 
+    }
+    .my_course .course_list table tbody tr td {
+        font-size: 14px; 
+        line-height: 19px; 
+    }
+    .my_course {
+        padding-top: 25px;
     }
 }

@@ -42,9 +42,7 @@
 .header__text h2{
     padding-bottom: 100px;
 }
-.header__image img{
-    height: 80%;
-}
+
 .breadcrumber{
     padding: 60px 0 30px;
     background-color: #F8F8F8;
@@ -171,4 +169,69 @@
     color: #007C88;
     font-weight: 900;
     font-size: 30px;
+}
+
+/* mobile screen category title */
+.mobile_screen_title{
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mobile_screen_title .section_title{
+    margin-bottom: 0;
+}
+.mobile_screen_title .section_title h1 {
+	font-size: 25px; 
+}
+.mobile_screen_title .form-select { 
+	padding: 10px 15px; 
+	font-size: 1.6rem;
+	font-weight: 600;  
+	border: 1px solid #000;
+	border-radius: 4px;
+	 
+}
+/**** responsive *****/
+@media all and (max-width: 768px){
+    .header__text h2 {
+        padding-bottom: 0px;
+    }
+    .course_details .testimonial__video { 
+        margin: 20px 0 20px;
+    }
+    .breadcrumber {
+        padding: 30px 0 30px; 
+    }
+}
+
+@media all and (max-width: 400px){
+    .breadcrumber {
+        padding: 20px 0 20px;
+    }
+    .content ul { 
+        padding-left: 25px !important;
+    }
+    .course_details__content { 
+        padding: 20px 20px 5px 20px;
+        margin-right: 0;
+    }
+    .course_details__features { 
+        margin: 0;
+    }
+    .register .register__content .register__content__paragraph {
+        padding: 20px 15px 0; 
+    }
+    .suggested_course > .container > h2 {
+        font-size: 30px; 
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .suggested_course {
+        padding: 30px 0 0;
+    }
+    .content p, .content ul { 
+        line-height: 23px;
+    }
+    .course_details__features ul li {
+        margin-bottom: 10px; 
+    }
 }
