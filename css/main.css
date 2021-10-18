@@ -57,7 +57,7 @@ body {
   display: flex;
   position: absolute;
   top: 41%;
-  transform: translateX(-50%);
+  transform: translateX(-60%);
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -85,7 +85,7 @@ body {
   background-image: linear-gradient(90deg, #e1fcff 30%, #f9ffed 100%);
 }
 .header__text {
-  margin-top: 10rem;
+	margin: 10rem 0 6rem;
 }
 .header__text h3 {
   font-weight: bold;
@@ -121,10 +121,14 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  
 }
 
 .banner_slider {
   position: relative;
+}
+.banner_slider__single_item{
+  overflow: hidden;
 }
 .banner_slider ul.slick-dots{
   list-style-type: none;
@@ -351,8 +355,7 @@ body {
   font-weight: bold;
   color: #001F22;
 }
-.about-section__text h3 {
-  width: 460px;
+.about-section__text h3 { 
   line-height: 30px;
 }
 .about-section__text p {
@@ -491,7 +494,7 @@ body {
 .course_details__single__info__button{
   border: 1px solid #007C88;
   line-height: 4rem;
-  padding: 0 1.5rem;
+  padding: 0 .5rem;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -781,6 +784,7 @@ body {
 
 .video_review{
   padding-top: 50px;
+  justify-content: center;
 }
 .testimonial__video > img{
   width: 100%;
@@ -788,8 +792,8 @@ body {
 .testimonial__video{
   position: relative;
   border-radius: 12px;
-  overflow: hidden;
-  margin: 0 7.5px;
+  overflow: hidden; 
+  margin-bottom: 15px;
 }
 .testimonial__video .overlay{
   position: absolute;
@@ -914,8 +918,8 @@ body {
     left: -143px;
   }
 
-  .about-section {
-    margin-top: 8rem;
+  .about-section__text h2 {
+    font-size: 3.8rem; 
   }
 
   .main_menu.navbar-nav {
@@ -931,7 +935,9 @@ body {
   .course-section .section_title p {
     width: 100%;
   }
-
+  .course_details__single__info__button{ 
+    font-size: 1.4rem; 
+  }
   .testimonial .section_title p {
     width: 100%;
   }
@@ -941,19 +947,51 @@ body {
     flex-basis: none;
   }
 }
+ 
 @media all and (max-width: 768px) {
+  
   .navbar {
     padding: 2rem 0;
     background: #c1e9ed;
   }
 
-  .header {
-    background-image: url("../images/admission-going on.jpg");
+  .slider-1{
+    background-image: url(../images/courses/1.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top;
+    position: relative;
+    z-index: -1;
   }
-
+  .slider-2{
+    background-image: url(../images/courses/2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+  }
+  .slider-3{
+    background-image: url(../images/courses/3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+  }
+  .slider-1::after,
+  .slider-2::after,
+  .slider-3::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #c1e9edd1;
+    z-index: -1;
+    /* background-image: linear-gradient(90deg, #e1fcff 30%, #f9ffed 100%) */
+  }
   .header__text {
     text-align: center;
   }
@@ -968,12 +1006,22 @@ body {
     margin: 0 auto 3rem;
     width: 70%;
   }
-
-  .about-section__text {
+  /******* Only banner *********/
+  .banner .header__image {
+    width: 100%;
+    height: 100%; 
+  }
+  .banner .header__image img {
+    width: 100%; 
+    position: unset;
+    transform: unset;
+  }
+/*********** About ***********/
+.about-section .about-section__text {
     margin-left: 0;
     text-align: center;
   }
-
+ 
   .about-section__text ul {
     text-align: left;
   }
@@ -982,6 +1030,13 @@ body {
     margin-top: 2rem;
   }
 
+  /***** feature section *******/
+  .feature-section__single { 
+    text-align: center;
+  }
+  .feature-section__single p { 
+    padding-right: 0px;
+  }
   .btn_primary {
     min-width: 16rem;
     min-height: 5.5rem;
@@ -1032,7 +1087,12 @@ body {
   .navbar .navbar-brand .mobile_logo {
     width: 80%;
   }
-
+  .header__text h2 {
+    font-size: 3rem;
+  }
+  .header__text h2 span {
+    font-size: 4rem;
+  }
   .header__text {
     margin-top: 4rem;
   }
@@ -1040,15 +1100,27 @@ body {
   .header__text a.btn_primary {
     margin-bottom: 6rem;
   }
-
+/******* only banner *********/
+  .header__text {
+    margin: 3rem 1rem 0rem;
+  }
   .about-section__text h2 {
     font-size: 3rem;
   }
-
   .about-section {
-    margin-top: 6rem;
+    padding: 4rem 0 6rem; 
   }
-
+  .header__text h2 span {
+    font-size: 4rem;
+  }
+  /*******Feature section********/
+  .feature-section .section_title h1 {
+    font-size: 3rem; 
+    padding: 30px 0 25px;
+  }
+  .feature-section__single p { 
+    display: none;
+  }
   .course-section .section_title h1 {
     font-size: 3rem;
   }
@@ -1065,9 +1137,10 @@ body {
     font-size: 3rem;
     text-align: center;
   }
-
+/********* testimonial  ****/
   .testimonial .section_title {
     margin-bottom: 3rem;
+    text-align: center;
   }
 
   .testimonial .section_title h1 {
@@ -1077,6 +1150,7 @@ body {
   .testimonial .section_title p {
     width: 80%;
     font-size: 1.6rem;
+    margin: auto;
   }
 
   .footer {
@@ -1141,12 +1215,12 @@ body {
   }
 
   .header__text h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
   .header__text h2 span {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .header__text p {
@@ -1158,6 +1232,17 @@ body {
   .header__text a.btn_primary {
     margin-bottom: 4rem;
   }
+/* ************about **************/
+.about-section__text h3 {
+	line-height: 25px;
+}
+.about-section__text p { 
+	line-height: 2.5rem; 
+}
+  /******* feature section*********/
+  .feature-section__single h3 {
+    font-size: 14px;
+  }
 
   .footer .footer__menu ul {
     padding: 0;
@@ -1168,6 +1253,10 @@ body {
     padding: 0.7rem;
     margin: 0;
   }
+  /********* course section *********/
+  .course-section .section_title p { 
+    line-height: 2.5rem; 
+  }
 }
 @media all and (max-width: 400px) {
   .course-section .more_course .single_course {
@@ -1176,8 +1265,7 @@ body {
   }
 
   .about-section {
-    padding: 3rem 0;
-    margin-top: 4rem;
+    padding: 3rem 0; 
   }
 
   .testimonial .section_title h1 {
