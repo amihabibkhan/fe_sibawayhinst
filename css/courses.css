@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .course-section{
     padding-bottom: 0;
 }

@@ -9,7 +9,10 @@
 } 
 .breadcrumb span.current_page { 
     color: #000809;  
-} 
+}
+.header__text h2 {
+    padding-bottom: 100px;
+}
 
 
 /************ about_Sibawayh *************/
